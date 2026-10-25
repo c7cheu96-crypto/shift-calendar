@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>교대 근무 달력 다운로드</title>
+    <meta name="theme-color" content="#FAFAF7" />
+    <link rel="icon" href="./favicon.ico" />
+    <style>
+      :root { --bg: #FAFAF7; --text: #1C1C1A; --sub: #5E5E58; --line: #E2E1DB; --day: #FFE3C7; --night: #DCE6FB; --ink: #173A85; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text);
+        font-family: "Noto Sans KR", system-ui, -apple-system, sans-serif; line-height: 1.6; }
+      main { max-width: 480px; margin: 0 auto; padding: 32px 16px 48px; }
+      .icon { width: 84px; height: 84px; border-radius: 20px; display: block; margin-bottom: 16px; }
+      h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.5px; }
+      .lead { color: var(--sub); margin: 0 0 24px; }
+      .bands { display: flex; gap: 6px; margin-bottom: 24px; }
+      .bands span { flex: 1; text-align: center; border-radius: 10px; padding: 6px 0; font-size: 13px; font-weight: 700; }
+      .d { background: var(--day); color: #9A4300; } .n { background: var(--night); color: var(--ink); }
+      .btn { display: block; text-align: center; background: var(--text); color: #fff; text-decoration: none;
+        font-weight: 700; font-size: 17px; padding: 16px; border-radius: 16px; }
+      .meta { text-align: center; color: var(--sub); font-size: 13px; margin: 8px 0 28px; }
+      h2 { font-size: 17px; margin: 0 0 10px; }
+      ol { padding-left: 20px; margin: 0 0 24px; }
+      li { margin-bottom: 8px; }
+      .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin-bottom: 16px; font-size: 14px; }
+      .card b { display: block; margin-bottom: 4px; }
+      a.link { color: var(--ink); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="icon" src="./apple-touch-icon.png" alt="" />
+      <h1>교대 근무 달력</h1>
+      <p class="lead">주간·야간 교대 근무를 한눈에 보는 달력이에요.</p>
+      <div class="bands"><span class="d">주간</span><span class="n">야간</span><span class="d">주간</span><span class="n">야간</span></div>
+
+      <a class="btn" href="./shift-calendar.apk" download>안드로이드 앱 다운로드</a>
+      <p class="meta">APK · 버전 1.0.0</p>
+
+      <h2>설치 방법</h2>
+      <ol>
+        <li>위 버튼을 눌러 파일을 받아요.</li>
+        <li>다운로드가 끝나면 알림이나 <b>내 파일 › 다운로드</b>에서 <b>shift-calendar.apk</b>를 눌러요.</li>
+        <li>“출처를 알 수 없는 앱” 안내가 나오면 <b>설정</b> → <b>이 출처 허용</b>을 켜고 돌아와 <b>설치</b>를 눌러요.</li>
+        <li>Play 프로텍트 경고가 나오면 <b>무시하고 설치</b>(또는 세부정보 › 설치)를 눌러요. Play 스토어를 거치지 않은 앱이라 나오는 안내예요.</li>
+      </ol>
+
+      <div class="card">
+        <b>처음 열면</b>
+        아래 <b>일정 변경하기</b>에서 내 근무가 시작하는 월요일, 첫 근무(주간/야간), 교대 주기(1~4주)를 골라 주세요.
+      </div>
+      <div class="card">
+        <b>아이폰이라면</b>
+        Safari에서 <a class="link" href="./">웹 버전</a>을 열고 공유 버튼 → <b>홈 화면에 추가</b>를 누르면 앱처럼 쓸 수 있어요.
+      </div>
+    </main>
+  </body>
+</html>
